@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <%- include('head', { title: "Mini message board" }) %>
+  <body>
+    <h1>Message <%= index + 1 %> details</h1>
+    <main>
+      <a href="/">Go to all Message</a>
+      <div class="message">
+        <span><strong>Name: </strong><%= message.user %></span>
+        <span><strong>Message: </strong><%= message.text %></span>
+        <span><strong>Added At: </strong><%= message.added %></span>
+      </div>
+    </main>
+    <%- include("footer") %>
+  </body>
+</html>

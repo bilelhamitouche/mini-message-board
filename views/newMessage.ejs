@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <%- include('head', { title: "New Message" }) %>
+  <body>
+    <h1>New message</h1>
+    <main>
+      <a href="/">Go to messages</a>
+      <form method="post" action="/new">
+        <label>
+          <span>Name: </span>
+          <input type="text" name="name" placeholder="Enter your name" required />
+        </label>
+        <label>
+          <span>Message: </span>
+          <textarea name="text" placeholder="Enter your name" required ></textarea>
+        </label>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </main>
+    <%- include("footer") %>
+  </body>
+</html>
